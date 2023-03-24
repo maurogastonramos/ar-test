@@ -27,6 +27,7 @@
       ></a-asset-item>
     </a-assets>
 
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
     <a-entity mindar-image-target="targetIndex: 0">
       <a-plane
