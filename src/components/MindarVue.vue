@@ -1,13 +1,18 @@
 <script setup>  
   import { ref, defineExpose } from 'vue'
+  
   const sceneRef = ref(null)
   defineExpose({ sceneRef })
+
+  function getTarget() {
+  return new URL(`@/assets/targets.mind`, import.meta.url).href
+}
 </script>
 
 <template>
   <a-scene
     ref="sceneRef"
-    mindar-image="imageTargetSrc: ./src/assets/targets.mind; autoStart: false; uiLoading: no; uiError: no; uiScanning: no;"
+    :mindar-image="`imageTargetSrc: ${getTarget()}; autoStart: false; uiLoading: no; uiError: no; uiScanning: no;`"
     color-space="sRGB"
     embedded
     renderer="colorManagement: true, physicallyCorrectLights"
