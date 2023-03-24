@@ -9,8 +9,8 @@ function getTarget() {
 function getModel() {
   return new URL(`@/assets/scene.gltf`, import.meta.url).href;
 }
-function getBallonModel(){
-    return new URL(`@/assets/ballons/scene.gltf`, import.meta.url).href;
+function getBallonModel() {
+  return new URL(`@/assets/ballons/scene.gltf`, import.meta.url).href;
 }
 </script>
 
@@ -51,6 +51,7 @@ function getBallonModel(){
     ></a-camera>
 
     <a-entity mindar-image-target="targetIndex: 0">
+      <!-- Main Photo -->
       <a-plane
         src="#card"
         position="0 0 0"
@@ -58,7 +59,10 @@ function getBallonModel(){
         width="1"
         rotation="0 0 0"
       ></a-plane>
+
+      <!-- Bottom container -->
       <a-entity id="parent" position="0 -0.4 0">
+        <!-- Left heart -->
         <a-gltf-model
           rotation="0 0 0 "
           position="-0.5 0.2 0"
@@ -66,7 +70,7 @@ function getBallonModel(){
           src="#avatarModel"
           animation="property: position; to: -0.5 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
         ></a-gltf-model>
-        
+
         <!-- Right Heart -->
         <a-gltf-model
           rotation="0 0 0 "
@@ -76,22 +80,21 @@ function getBallonModel(){
           animation="property: position; to: 0.5 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
         ></a-gltf-model>
 
-      
-<a-entity text="value:¡Feliz mes!; color:black; anchor:center;wrap-count:7; shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/dancingscript/DancingScript-Regular.json;" position="0 0.0 0" ></a-entity>     
-
-
-
+        <!-- Text -->
+        <a-entity
+          text="value:¡Feliz mes!; color:black; anchor:center;wrap-count:7; shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/dancingscript/DancingScript-Regular.json;"
+          position="0 0.0 0"
+        ></a-entity>
       </a-entity>
 
-            
-              <!-- center Heart -->
-        <a-gltf-model
-          rotation="0 0 0 "
-          position="0 -0.5 0.1"
-          scale="0.0009 0.0009 0.0009"
-          src="#avatarModel"
-animation="property: rotation; to: 0 360 0; dur: 1500; easing: linear; loop: true;"
-        ></a-gltf-model>
+      <!-- center Heart -->
+      <a-gltf-model
+        rotation="0 0 0 "
+        position="0 -0.5 0.1"
+        scale="0.0009 0.0009 0.0009"
+        src="#avatarModel"
+        animation="property: rotation; to: 0 360 0; dur: 1500; easing: linear; loop: true;"
+      ></a-gltf-model>
     </a-entity>
   </a-scene>
 </template>
