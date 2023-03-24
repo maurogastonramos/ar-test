@@ -7,10 +7,10 @@ function getTarget() {
 }
 
 function getModel() {
-  return new URL(`@/assets/scene.gltf`, import.meta.url).href;
+  return new URL(`/assets/scene.gltf`, import.meta.url).href;
 }
 function getBallonModel() {
-  return new URL(`@/assets/ballons/scene.gltf`, import.meta.url).href;
+  return new URL(`/assets/ballons/scene.gltf`, import.meta.url).href;
 }
 </script>
 
