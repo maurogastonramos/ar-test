@@ -1,0 +1,3 @@
+<template>
+Módulo ejemplo
+</template>
