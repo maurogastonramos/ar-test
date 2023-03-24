@@ -11,12 +11,9 @@ export default defineConfig({
           isCustomElement: (tag) => tag.startsWith("a-"),
         },
       },
-    })
+    }),
   ],
-    server: {
-        host: true,
-        port: '5173',
-        },
+  base: process.env.NODE_ENV === "production" ? "/ar-test/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
