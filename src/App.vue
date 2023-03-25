@@ -18,4 +18,7 @@ body,
 #app {
   height: 100%;
 }
+body {
+  background: black;
+}
 </style>
