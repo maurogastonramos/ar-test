@@ -100,6 +100,8 @@ function getSnoopy() {
           position="0.1 .5 0"
           scale="0.6 0.6 0.6"
           src="#snoopy"
+                    animation="property: position; to: 0.1 .5 .1; dur: 500; easing: easeInOutQuad; loop: true; dir: alternate"
+
         ></a-gltf-model>
       </a-entity>
 
@@ -108,19 +110,19 @@ function getSnoopy() {
         <!-- Left heart -->
         <a-gltf-model
           rotation="0 0 0 "
-          position="-0.5 0.2 0"
+          position="-0.5 0 0.1"
           scale="0.0005 0.0005 0.0005"
           src="#redHeart"
-          animation="property: position; to: -0.5 0.1 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate"
+          animation="property: position; to: -0.5 0.4 0.1; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate"
         ></a-gltf-model>
 
         <!-- Right Heart -->
         <a-gltf-model
           rotation="0 0 0 "
-          position="0.5 0.2 0"
+          position="0.5 0.4 0.1"
           scale="0.0005 0.0005 0.0005"
           src="#redHeart"
-          animation="property: position; to: 0.5 0.1 0; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate"
+          animation="property: position; to: 0.5 0 0.1; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate"
         ></a-gltf-model>
 
         <!-- Text -->
