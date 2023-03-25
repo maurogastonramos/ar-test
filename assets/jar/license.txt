@@ -1,0 +1,11 @@
+Model Information:
+* title:	Heart-shaped cake
+* source:	https://sketchfab.com/3d-models/heart-shaped-cake-9b22fc3dce074a8bae410a674a07d229
+* author:	pan.stasian (https://sketchfab.com/pan_stasian)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Heart-shaped cake" (https://sketchfab.com/3d-models/heart-shaped-cake-9b22fc3dce074a8bae410a674a07d229) by pan.stasian (https://sketchfab.com/pan_stasian) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
